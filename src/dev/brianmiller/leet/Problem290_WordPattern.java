@@ -1,5 +1,7 @@
 package dev.brianmiller.leet;
 
+import java.util.HashMap;
+
 /**
  * @author Brian A. Miller
  * @date   July 26, 2024
