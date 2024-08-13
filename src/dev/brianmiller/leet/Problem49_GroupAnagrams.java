@@ -1,5 +1,9 @@
 package dev.brianmiller.leet;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
 public class Problem49_GroupAnagrams {
 
     /**
@@ -37,7 +41,7 @@ public class Problem49_GroupAnagrams {
         return result;
     }
 
-    private boolean areAnagrams(String a, String b) {
+    private static boolean areAnagrams(String a, String b) {
         if (a == null || b == null) {
             return false;
         }

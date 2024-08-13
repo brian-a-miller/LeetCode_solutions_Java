@@ -1,5 +1,7 @@
 package dev.brianmiller.leet;
 
+import java.util.ArrayList;
+
 /**
  * Solution in Java for LeetCode problem "36. Valid Sudoku"
  * described at https://leetcode.com/problems/valid-sudoku/

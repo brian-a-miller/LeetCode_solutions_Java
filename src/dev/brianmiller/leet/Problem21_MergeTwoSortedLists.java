@@ -38,7 +38,7 @@ public class Problem21_MergeTwoSortedLists {
         
     }
 
-    class ListNode {
+    static class ListNode {
         int val;
         ListNode next;
         ListNode() {}
