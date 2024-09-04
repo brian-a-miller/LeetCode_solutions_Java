@@ -1,6 +1,6 @@
 package dev.brianmiller.leet;
 
-public class ContainerWithMostWater {
+public class Problem11_ContainerWithMostWater {
 
     public static int maxArea(int[] height) {
         int windowLeft = 0;
