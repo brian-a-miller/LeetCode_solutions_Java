@@ -6,6 +6,9 @@ import java.util.Arrays;
  * @author Brian A. Miller
  * @date Thursday, August 22, 2024
  *
+ * NOTE: 202 / 266 test cases passed.
+ * Wrong output for Input [1, 3, 2]
+ *
  * This is my attempt at solving LeetCode problem
  * "31. Next Permutation" as described at
  * https://leetcode.com/problems/next-permutation/
@@ -104,13 +107,13 @@ public class Problem31_NextPermutation {
      *         public void nextPermutation(int[] nums) {
      *             int i = nums.length - 2;
      *             while (i >= 0 && nums[i + 1] <= nums[i]) {
-            i--;
-        }
-        if (i >= 0) {
-            int j = nums.length - 1;
-            while (nums[j] <= nums[i]) {
-                j--;
-            }
+     *                 i--;
+     *             }
+     *             if (i >= 0) {
+     *                 int j = nums.length - 1;
+     *                 while (nums[j] <= nums[i]) {
+     *                     j--;
+     *                 }
             swap(nums, i, j);
         }
         reverse(nums, i + 1);
