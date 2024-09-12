@@ -1,8 +1,8 @@
-
+package dev.brianmiller.leet;
 /**
  * https://leetcode.com/problems/symmetric-tree/
  */
-class TreeNode {
+/*class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
@@ -14,6 +14,7 @@ class TreeNode {
         this.right = right;
     }
 }
+*/
 
 /**
  * @author Brian A. Miller

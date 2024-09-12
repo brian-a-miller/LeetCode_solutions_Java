@@ -55,7 +55,7 @@ public class MaxStack {
     public int pop() {
         if (topOfStack == null) {
             throw new EmptyStackException();
-;       }
+       }
         Node oldTop = topOfStack;
         int val = oldTop.getValue();
         topOfStack = topOfStack.getNext();
