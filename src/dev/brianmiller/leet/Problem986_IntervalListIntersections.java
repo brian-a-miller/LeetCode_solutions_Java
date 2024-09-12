@@ -20,8 +20,11 @@ public class Problem986_IntervalListIntersections {
 
     public static int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
 
-        int[][] result;
+        //int[][] result = new int[][];
 
-        return result;
+        // TODO
+
+        //return result;
+        return null;
     }
 }

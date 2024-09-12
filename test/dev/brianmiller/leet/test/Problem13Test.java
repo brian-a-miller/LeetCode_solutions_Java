@@ -1,8 +1,9 @@
 package dev.brianmiller.leet.test;
 
-import dev.brianmiller.leet.Problem13_RomanToInteger;
 import org.junit.Assert;
 import org.junit.Test;
+
+import dev.brianmiller.leet.Problem13_RomanToInteger;
 
 public class Problem13Test {
 

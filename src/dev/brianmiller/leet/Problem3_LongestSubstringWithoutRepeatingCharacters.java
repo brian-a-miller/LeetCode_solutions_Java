@@ -28,6 +28,48 @@ public class Problem3_LongestSubstringWithoutRepeatingCharacters {
         }
     }
 
+    /**
+     * This solution was accepted
+     *
+     * @param s
+     * @return
+     */
+    public static int lengthOfLongestSubstring_09102024(String s) {
+
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+        if (s.length() == 1) {
+            return 1;
+        }
+
+        int maxLength = 1;
+        Map<Character, Integer> letterToLastPosition = new HashMap<>();
+        letterToLastPosition.put(s.charAt(0), 0);
+        int firstIndex = 0;
+        int lastIndex = 0;
+        while (lastIndex + 1 < s.length()) {
+            lastIndex++;
+            char newLetter = s.charAt(lastIndex);
+            if (letterToLastPosition.containsKey(newLetter)) {
+                firstIndex = Math.max(firstIndex, letterToLastPosition.get(newLetter) + 1);
+                if (firstIndex == lastIndex) {
+                    letterToLastPosition.clear();
+                }
+                letterToLastPosition.put(newLetter, lastIndex);
+            } else {
+                letterToLastPosition.put(s.charAt(lastIndex), lastIndex);
+
+            }
+            int thisLength = lastIndex - firstIndex + 1;
+            if (thisLength > maxLength) {
+                maxLength = thisLength;
+            }
+        }
+
+        return maxLength;
+    }
+
     public static int lengthLongestSubstringWithoutRepeating(
             String s) {
 
