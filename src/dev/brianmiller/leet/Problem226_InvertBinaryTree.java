@@ -5,25 +5,6 @@ import java.util.Deque;
 import java.util.Queue;
 import java.util.Stack;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
-
 public class Problem226_InvertBinaryTree {
 
     public static TreeNode invertTree_MySolution1(TreeNode root) {
